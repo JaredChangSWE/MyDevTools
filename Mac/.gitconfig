@@ -1,6 +1,8 @@
 [user]
-	email = JaredChang@kknow.com
-	name = JaredChang
+        email = qifen.pocket@gmail.com
+        name = JaredChang
+
+        signingkey = ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQC9XM0t/ep38EiHk2PV8QE1hu9kt/qTL8Mvf8SrVR8Niqql2nohoM1oE+p6oI7qqn3G0CI5haxKYTdaHmPBJLJOIUVvjpHM0UWThpR4GxUHd8D0eQ9WC08wFd6ipTRSqhtfRwqVAYznHDkJuUIgm3/i+1QlNuzVi5C2oaEvgbQhfB+8TBZgKYnlGVs9zOCCj3+vYWYDAhUh2Kec84TnhO10cHIH6UiKPWDgv9gy4xUbgftbEAwfBSvYRRJc0j2f7P1n2q8ZQ8kGl4vMBnTSjYa8ay30DgKvyvCmu7krekD7cuvZwlBioVwbtobUaUgIpoy2Jukq08ZdxVz4ekEMpoSoMo/V/fg04F8xCZ4oU06p0K6EyxA85scroyK4wVd7L0VLDcyXe72vmzP4vYyaDw1zd64hOzF9xAhMgTibfGYjQDDkeX8AtLCJTKvbCQ0+vTav/0kjPR7G09a2033OFX0tGI1zz7jVGmthS06Sqs4arGbdzL50dwxJmuf1xaljlPk=
 
 [merge]
     tool = vscode
@@ -18,7 +20,19 @@
     autoSetupRemote = true
 
 [include]
-	path = ~/.gitalias
+        path = ~/.gitalias
 
 [credential]
-	helper = store
+        helper = store
+[filter "lfs"]
+        clean = git-lfs clean -- %f
+        smudge = git-lfs smudge -- %f
+        process = git-lfs filter-process
+        required = true
+
+[gpg]
+        format = ssh
+[gpg "ssh"]
+        program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
+[commit]
+        gpgsign = true

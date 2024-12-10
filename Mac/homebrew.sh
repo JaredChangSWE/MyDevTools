@@ -9,6 +9,8 @@ brew upgrade git
 brew install python3
 pip install --upgrade pip
 
+brew install pyenv
+
 # library
 
 brew install rustup-init
@@ -43,7 +45,6 @@ brew install --cask insomnia
 brew install --cask gitkraken
 
 # Containers
-brew install --cask lens
 brew install kubectl
 brew install helm      
 brew install --cask docker
@@ -66,17 +67,15 @@ brew install --cask todoist
 brew install --cask dropbox
 brew install --cask google-drive
 brew install --cask hiddenbar
-brew install --cask cron
 brew install --cask arc
 brew install --cask notion
 brew install --cask discord
 brew install --cask miro
 brew install --cask daisydisk
-brew install --cask microsoft-teams
 brew install --cask alt-tab
 brew install --cask http-toolkit
-brew install --cask postman
 brew install --cask zoom
+brew install --cask dropzone
 
 # Command line tools
 
@@ -91,7 +90,4 @@ brew install mysql-client
 brew install glab
 brew install gpg2
 brew install k6
-
-brew install fzf
-# To install useful key bindings and fuzzy completion:
-$(brew --prefix)/opt/fzf/install
+brew install gnupg
