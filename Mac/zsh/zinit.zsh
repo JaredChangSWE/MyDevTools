@@ -36,6 +36,7 @@ zinit snippet OMZ::lib/completion.zsh
 zinit snippet OMZ::lib/history.zsh
 zinit snippet OMZ::plugins/command-not-found/command-not-found.plugin.zsh
 zinit snippet OMZ::plugins/aws
+zinit snippet OMZ::plugins/asdf
 
 zinit ice lucid wait='0'
 zinit light djui/alias-tips

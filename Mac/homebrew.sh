@@ -9,15 +9,9 @@ brew upgrade git
 brew install python3
 pip install --upgrade pip
 
-brew install pyenv
+# all in one package manager
 
-# library
-
-brew install rustup-init
-brew install go
-brew install flutter
-brew install tfenv
-brew install nvm
+brew install asdf
 
 # aws
 
